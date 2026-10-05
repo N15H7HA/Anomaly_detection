@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Behavioral Anomaly Detection — Analyst Console</title>
+  <style>
+    /* 
+     * 1. CSS VARIABLES & THEME
+     * Modernized dark theme with vibrant, accessible accents.
+     */
+    :root {
+      --bg: #0b0f19;
+      --panel: #111827;
+      --panel-2: #1f2937;
+      --border: #374151;
+      --border-hover: #4b5563;
+      --text: #f3f4f6;
+      --text-dim: #9ca3af;
+      --text-faint: #6b7280;
+      
+      /* Status Colors */
+      --amber: #f59e0b;
+      --amber-dim: rgba(245, 158, 11, 0.15);
+      --red: #ef4444;
+      --red-dim: rgba(239, 68, 68, 0.15);
+      --green: #10b981;
+      --green-dim: rgba(16, 185, 129, 0.15);
+      --blue: #3b82f6;
+      
+      /* Typography */
+      --mono: 'JetBrains Mono', 'Fira Code', 'IBM Plex Mono', ui-monospace, monospace;
+      --sans: 'Inter', system-ui, -apple-system, sans-serif;
+      
+      /* Effects */
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --transition: all 0.2s ease-in-out;
+    }
+
+    * { box-sizing: border-box; }
+    
+    body {
+      margin: 0; 
+      background: var(--bg); 
+      color: var(--text);
+      font-family: var(--sans); 
+      font-size: 14px; 
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .app-container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 32px 24px 60px;
+    }
+
+    /* 
+     * 2. HEADER
+     */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    
+    .title-block h1 {
+      font-size: 20px;
+      margin: 0 0 6px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .title-block .sub {
+      color: var(--text-dim);
+      font-size: 13px;
+    }
+    
+    .live-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      margin-right: 10px;
+      box-shadow: 0 0 8px var(--green);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+      70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    /* 
+     * 3. KPI METRICS
+     */
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    
+    .kpi {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    
+    .kpi:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+    
+    .kpi .label {
+      font-size: 11px;
+      color: var(--text-faint);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    
+    .kpi .value {
+      font-family: var(--mono);
+      font-size: 24px;
+      font-weight: 600;
+    }
+    
+    .kpi .value.amber { color: var(--amber); }
+    .kpi .value.green { color: var(--green); }
+    
+    .kpi .sub {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 6px;
+    }
+
+    /* 
+     * 4. MAIN LAYOUT
+     */
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 20px;
+    }
+    
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow);
+    }
+    
+    .panel-head {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(31, 41, 55, 0.4);
+    }
+    
+    .panel-head h2 {
+      font-size: 14px;
+      margin: 0;
+      font-weight: 600;
+      color: var(--text);
+    }
+    
+    .panel-head .count {
+      font-family: var(--mono);
+      color: var(--text-dim);
+      font-size: 12px;
+      background: var(--panel-2);
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    /* 
+     * 5. FILTERS
+     */
+    .filters {
+      display: flex;
+      gap: 8px;
+      padding: 12px 20px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      background: var(--panel);
+    }
+    
+    .chip {
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      cursor: pointer;
+      background: transparent;
+      font-family: var(--sans);
+      white-space: nowrap;
+      transition: var(--transition);
+    }
+    
+    .chip:hover {
+      border-color: var(--text-dim);
+      color: var(--text);
+    }
+    
+    .chip.active {
+      background: var(--amber-dim);
+      border-color: var(--amber);
+      color: var(--amber);
+      font-weight: 500;
+    }
+
+    /* 
+     * 6. TABLE STYLES
+     */
+    .table-container {
+      max-height: 640px;
+      overflow-y: auto;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    thead th {
+      position: sticky;
+      top: 0;
+      background: rgba(17, 24, 39, 0.95);
+      backdrop-filter: blur(4px);
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-faint);
+      padding: 12px 20px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      z-index: 10;
+    }
+    
+    tbody tr {
+      cursor: pointer;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s ease;
+    }
+    
+    tbody tr:hover { background: var(--panel-2); }
+    tbody tr.selected { background: rgba(59, 130, 246, 0.1); }
+    
+    td {
+      padding: 14px 20px;
+      vertical-align: middle;
+    }
+    
+    .risk-cell {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 100px;
+    }
+    
+    .risk-bar-bg {
+      width: 48px;
+      height: 6px;
+      background: var(--panel-2);
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    
+    .risk-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.5s ease;
+    }
+    
+    .risk-num {
+      font-family: var(--mono);
+      font-weight: 600;
+      font-size: 13px;
+    }
+    
+    .entity {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--text);
+    }
+    
+    .etype {
+      font-size: 11px;
+      color: var(--text-faint);
+      text-transform: capitalize;
+      margin-top: 2px;
+    }
+    
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      text-transform: capitalize;
+    }
+    
+    .reasons {
+      color: var(--text-dim);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    
+    .reasons span {
+      display: inline-block;
+      background: var(--panel-2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 2px 8px;
+      margin: 2px 6px 2px 0;
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+    
+    .ts {
+      color: var(--text-faint);
+      font-family: var(--mono);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    /* 
+     * 7. DETAIL PANEL
+     */
+    #detail .empty {
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--text-faint);
+      font-size: 13px;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    
+    #detail-content {
+      padding: 20px;
+      display: none;
+      overflow-y: auto;
+    }
+    
+    .d-row { margin-bottom: 20px; }
+    
+    .d-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-faint);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    
+    .d-value {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--text);
+      word-break: break-all;
+    }
+    
+    .d-score {
+      font-size: 36px;
+      font-family: var(--mono);
+      font-weight: 700;
+      line-height: 1;
+    }
+    
+    .verdict {
+      margin-top: 24px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      line-height: 1.5;
+      border-left: 4px solid;
+    }
+    
+    .hist-container {
+      background: var(--panel-2);
+      border-radius: 8px;
+      padding: 12px;
+    }
+    
+    .hist-item {
+      padding: 10px 12px;
+      border-left: 2px solid var(--border);
+      margin-left: 4px;
+      margin-bottom: 4px;
+      font-size: 12px;
+      position: relative;
+    }
+    
+    .hist-item::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--border);
+    }
+    
+    .hist-item.anom {
+      border-left-color: var(--red);
+      background: var(--red-dim);
+      border-radius: 0 6px 6px 0;
+    }
+    
+    .hist-item.anom::before { background: var(--red); }
+    
+    .hist-item .h-ts {
+      color: var(--text-faint);
+      font-family: var(--mono);
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+    
+    .hist-item .h-res { color: var(--text); }
+
+    /* 
+     * 8. FOOTER & SCROLLBARS
+     */
+    footer {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--text-faint);
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover { background: var(--border-hover); }
+  </style>
+</head>
+<body>
+  
+<div class="app-container">
+  
+  <header>
+    <div class="title-block">
+      <h1><span class="live-dot"></span>Behavioral Anomaly Detection Dashboard</h1>
+      <div class="sub" id="subhead">Synthetic access-log demo · Loading core systems...</div>
+    </div>
+    <div class="sub" id="asof"></div>
+  </header>
+
+  <!-- KPI Metrics Grid -->
+  <section class="kpis" id="kpis"></section>
+
+  <!-- Main Dashboard Layout -->
+  <main class="layout">
+    
+    <!-- Left Panel: Alert Queue -->
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Ranked Alert Queue</h2>
+        <span class="count" id="queue-count"></span>
+      </div>
+      <div class="filters" id="filters"></div>
+      
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Risk</th>
+              <th>Entity</th>
+              <th>Category</th>
+              <th>Contributing Factors</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody id="alert-rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Right Panel: Alert Detail Sidebar -->
+    <aside class="panel" id="detail">
+      <div class="panel-head">
+        <h2>Alert Detail</h2>
+      </div>
+      
+      <div class="empty" id="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.5;">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+        Select an alert from the queue to view<br>risk breakdown and entity history.
+      </div>
+      
+      <div id="detail-content"></div>
+    </aside>
+
+  </main>
+
+  <footer>
+    Demo notes: Risk scores derive from an IsolationForest trained strictly on behavioral-deviation features (unsupervised). 
+    Category mapping and contributing factors provided by RandomForest + SHAP attribution. Ground-truth labels are explicitly for demo review 
+    and remain hidden in production environments.
+  </footer>
+</div>
+
+<!-- 
+  JSON DATA BLOB
+  Truncated for source code readability. Paste your full production JSON object here. 
+-->
+<script id="data-blob" type="application/json">
+{
+  "alerts": [
+    {"event_id": "ad11c3cdbe2c4efc84cec85000096e7c", "entity_id": "user::michellecherry_1bd1", "entity_type": "user", "timestamp": "2026-06-06 04:14:10.031962", "risk_score": 100.0, "predicted_category": "brute_force", "ground_truth_label": "brute_force", "reasons": ["session length deviation", "unusual command volume", "authentication outcome"], "source_ip": "202.19.11.0", "geo_location": "Chennai,IN", "resource_accessed": "/api/v1/endpoint_15", "auth_method": "sso", "device_os": "RTOS-fw2.3", "cold_start": false},
+    {"event_id": "e0ba59520b9746d69db4773b3ad08a68", "entity_id": "user::carlsonkristen_a8e0", "entity_type": "user", "timestamp": "2026-06-01 15:40:16.168471", "risk_score": 97.6, "predicted_category": "normal", "ground_truth_label": "normal", "reasons": ["session length deviation", "unusual command volume", "device fingerprint mismatch"], "source_ip": "153.34.14.40", "geo_location": "Hyderabad,IN", "resource_accessed": "/file/dept_share/14", "auth_method": "token", "device_os": "iOS 17", "cold_start": true},
+    {"event_id": "05c45e1188d549b3b581bc4fbb7d39a8", "entity_id": "user::bellmatthew_0c5e", "entity_type": "user", "timestamp": "2026-06-16 08:41:20.895766", "risk_score": 95.5, "predicted_category": "credential_stuffing", "ground_truth_label": "credential_stuffing", "reasons": ["session length deviation", "unusual command volume", "many identities from one source IP"], "source_ip": "185.20.208.114", "geo_location": "unknown_stuffing_origin", "resource_accessed": "/file/dept_share/25", "auth_method": "token", "device_os": "unknown", "cold_start": false},
+    {"event_id": "422fda8eb1f847edbd95dc7051d6edcd", "entity_id": "svc::recent_46d4", "entity_type": "service_account", "timestamp": "2026-06-01 10:15:49.867865", "risk_score": 95.5, "predicted_category": "normal", "ground_truth_label": "normal", "reasons": ["session length deviation", "unusual command volume", "unusually broad resource footprint"], "source_ip": "27.123.239.8", "geo_location": "Mumbai,IN", "resource_accessed": "/file/dept_share/4", "auth_method": "token", "device_os": "RTOS-fw2.3", "cold_start": true},
+    {"event_id": "b1ce4cb4de9a4fe08e245edabd3a6d33", "entity_id": "user::ihorton_ca8e", "entity_type": "user", "timestamp": "2026-06-12 01:15:04.441971", "risk_score": 94.9, "predicted_category": "lateral_movement", "ground_truth_label": "lateral_movement", "reasons": ["unusual command volume", "first-time resource access", "session length deviation"], "source_ip": "195.228.68.85", "geo_location": "Bengaluru,IN", "resource_accessed": "device_fn/sensor_poll", "auth_method": "password", "device_os": "iOS 17", "cold_start": false}
+  ],
+  "summary": { "total_events_scored": 45580, "alerts_shown": 150, "true_anomalies_in_queue": 105, "precision_in_queue": 0.7, "category_breakdown": { "brute_force": 82, "normal": 45, "credential_stuffing": 14, "lateral_movement": 5, "low_and_slow_exfil": 3, "device_spoofing": 1 } },
+  "detection_metrics": { "threshold_percentile": 95, "threshold_value": 56.946, "roc_auc": 0.942, "average_precision": 0.599, "precision_at_threshold": 0.547, "recall_at_threshold": 0.765, "confusion_matrix": { "tn": 42919, "fp": 1031, "fn": 382, "tp": 1248 }, "n_flagged": 2279, "n_true_anomalies": 1630, "n_total": 45580 },
+  "history": {
+    "user::michellecherry_1bd1": [{"timestamp": "2026-06-16 19:15:07.710370", "resource_accessed": "/api/v1/endpoint_7", "geo_location": "Chennai,IN", "auth_success": true, "session_duration_min": 20.08, "label": "normal"}]
+  }
+}
+</script>
+
+<script>
+/**
+ * Core Application Logic
+ * Encapsulated inside DOMContentLoaded for safer execution.
+ */
+document.addEventListener('DOMContentLoaded', () => {
+  
+  // 1. Initialize Data
+  const rawData = document.getElementById('data-blob').textContent;
+  const { alerts, summary, detection_metrics, history } = JSON.parse(rawData);
+
+  // 2. State Management
+  let activeFilter = 'all';
+  let selectedEventId = null;
+
+  // 3. Constants & Helpers
+  const CATEGORY_COLORS = {
+    brute_force: 'var(--red)',
+    credential_stuffing: 'var(--red)',
+    impossible_travel: 'var(--amber)',
+    lateral_movement: 'var(--amber)',
+    device_spoofing: 'var(--blue)',
+    low_and_slow_exfil: '#b07cd6',
+    insider_drift: 'var(--text-dim)',
+    normal: 'var(--green)'
+  };
+
+  const getCatColor = (c) => CATEGORY_COLORS[c] || 'var(--text-dim)';
+  const getRiskColor = (r) => r >= 70 ? 'var(--red)' : r >= 45 ? 'var(--amber)' : 'var(--green)';
+  const formatCatName = (c) => c === 'all' ? 'All' : c.replace(/_/g, ' ');
+
+  // 4. Initialization Methods
+  const initHeaders = () => {
+    document.getElementById('subhead').textContent = 
+      `${summary.total_events_scored.toLocaleString()} events scored · ${summary.alerts_shown} alerts in queue`;
+    document.getElementById('asof').textContent = 'Model run: synthetic corpus, 300 entities / 30 days';
+  };
+
+  const renderKPIs = () => {
+    const kpiData = [
+      { label: 'Detector ROC-AUC', value: detection_metrics.roc_auc.toFixed(3), sub: 'unsupervised, no labels used' },
+      { label: 'Precision @ Top 5%', value: (detection_metrics.precision_at_threshold * 100).toFixed(1) + '%', sub: `${detection_metrics.confusion_matrix.tp} true / ${detection_metrics.confusion_matrix.fp} false positives` },
+      { label: 'Recall @ Top 5%', value: (detection_metrics.recall_at_threshold * 100).toFixed(1) + '%', sub: `${detection_metrics.n_true_anomalies} true anomalies in corpus` },
+      { label: `Queue Precision (top ${summary.alerts_shown})`, value: (summary.precision_in_queue * 100).toFixed(1) + '%', sub: `${summary.true_anomalies_in_queue} confirmed anomalous` },
+      { label: 'Events Scored', value: summary.total_events_scored.toLocaleString(), sub: '30-day synthetic window' },
+    ];
+
+    document.getElementById('kpis').innerHTML = kpiData.map(k => `
+      <div class="kpi">
+        <div class="label">${k.label}</div>
+        <div class="value amber">${k.value}</div>
+        <div class="sub">${k.sub}</div>
+      </div>
+    `).join('');
+  };
+
+  const renderFilters = () => {
+    const categories = ['all', ...Object.keys(summary.category_breakdown)];
+    
+    document.getElementById('filters').innerHTML = categories.map(c => `
+      <button class="chip ${c === activeFilter ? 'active' : ''}" data-cat="${c}">
+        ${formatCatName(c)} ${c !== 'all' ? `(${summary.category_breakdown[c]})` : ''}
+      </button>
+    `).join('');
+
+    // Attach Filter Listeners
+    document.querySelectorAll('.chip').forEach(el => {
+      el.addEventListener('click', (e) => {
+        activeFilter = e.target.dataset.cat;
+        renderFilters();
+        renderRows();
+      });
+    });
+  };
+
+  const renderRows = () => {
+    const rows = alerts.filter(a => activeFilter === 'all' || a.predicted_category === activeFilter);
+    document.getElementById('queue-count').textContent = `${rows.length} shown`;
+    
+    document.getElementById('alert-rows').innerHTML = rows.map(a => `
+      <tr data-id="${a.event_id}" class="${a.event_id === selectedEventId ? 'selected' : ''}">
+        <td>
+          <div class="risk-cell">
+            <div class="risk-bar-bg">
+              <div class="risk-bar-fill" style="width:${a.risk_score}%; background:${getRiskColor(a.risk_score)}"></div>
+            </div>
+            <span class="risk-num" style="color:${getRiskColor(a.risk_score)}">${a.risk_score}</span>
+          </div>
+        </td>
+        <td>
+          <div class="entity">${a.entity_id}</div>
+          <div class="etype">${formatCatName(a.entity_type)} ${a.cold_start ? ' · cold-start' : ''}</div>
+        </td>
+        <td>
+          <span class="badge" style="background:${getCatColor(a.predicted_category)}22; color:${getCatColor(a.predicted_category)}">
+            ${formatCatName(a.predicted_category)}
+          </span>
+        </td>
+        <td>
+          <div class="reasons">${a.reasons.map(r => `<span>${r}</span>`).join('')}</div>
+        </td>
+        <td>
+          <div class="ts">${a.timestamp.replace('T', ' ').slice(0, 19)}</div>
+        </td>
+      </tr>
+    `).join('');
+
+    // Attach Row Listeners
+    document.querySelectorAll('#alert-rows tr').forEach(tr => {
+      tr.addEventListener('click', () => {
+        selectedEventId = tr.dataset.id;
+        renderRows(); // Update highlight
+        showDetail(selectedEventId);
+      });
+    });
+  };
+
+  const showDetail = (eventId) => {
+    const alertData = alerts.find(x => x.event_id === eventId);
+    if (!alertData) return;
+
+    document.getElementById('detail-empty').style.display = 'none';
+    const detailContent = document.getElementById('detail-content');
+    detailContent.style.display = 'block';
+
+    const entityHistory = (history[alertData.entity_id] || []).slice().reverse();
+    
+    const histHtml = entityHistory.length > 0 
+      ? `<div class="hist-container">` + entityHistory.map(h => `
+          <div class="hist-item ${h.label !== 'normal' ? 'anom' : ''}">
+            <div class="h-ts">${String(h.timestamp).replace('T', ' ').slice(0, 19)}</div>
+            <div class="h-res">
+              ${h.resource_accessed} · ${h.geo_location} 
+              ${h.label !== 'normal' ? `· <b style="color:var(--red)">${formatCatName(h.label)}</b>` : ''}
+            </div>
+          </div>
+        `).join('') + `</div>`
+      : `<div class="sub" style="padding:8px 0; color:var(--text-faint)">No additional history captured for this entity.</div>`;
+
+    // Ground Truth UI Logic
+    const isMatched = alertData.ground_truth_label === alertData.predicted_category;
+    const isAnom = alertData.ground_truth_label !== 'normal';
+    let verdictText = `Demo ground truth: <b>${formatCatName(alertData.ground_truth_label)}</b> `;
+    verdictText += isMatched ? '(Classifier Matched)' : isAnom ? '(Classifier Category Differs)' : '(False Positive)';
+
+    detailContent.innerHTML = `
+      <div class="d-row">
+        <div class="d-label">Risk score</div>
+        <div class="d-score" style="color:${getRiskColor(alertData.risk_score)}">${alertData.risk_score}</div>
+      </div>
+      <div class="d-row">
+        <div class="d-label">Entity</div>
+        <div class="d-value">${alertData.entity_id} <span class="etype" style="color:var(--text-dim)">(${alertData.entity_type})</span></div>
+      </div>
+      <div class="d-row">
+        <div class="d-label">Predicted category</div>
+        <div class="d-value" style="color:${getCatColor(alertData.predicted_category)}; font-weight:600;">
+          ${formatCatName(alertData.predicted_category)}
+        </div>
+      </div>
+      <div class="d-row">
+        <div class="d-label">Contributing factors (SHAP top-3)</div>
+        <div class="reasons">${alertData.reasons.map(r => `<span>${r}</span>`).join('')}</div>
+      </div>
+      <div class="d-row">
+        <div class="d-label">Session context</div>
+        <div class="d-value" style="font-size:12.5px; line-height:1.7; background:var(--panel-2); padding:12px; border-radius:8px;">
+          <span style="color:var(--text-dim)">IP Address:</span> ${alertData.source_ip}<br>
+          <span style="color:var(--text-dim)">Location:</span> ${alertData.geo_location}<br>
+          <span style="color:var(--text-dim)">Resource:</span> ${alertData.resource_accessed}<br>
+          <span style="color:var(--text-dim)">Auth Method:</span> ${alertData.auth_method} &nbsp;&nbsp;|&nbsp;&nbsp; 
+          <span style="color:var(--text-dim)">Device:</span> ${alertData.device_os}
+        </div>
+      </div>
+      <div class="verdict" style="background:${isAnom ? 'var(--red-dim)' : 'var(--green-dim)'}; border-color:${isAnom ? 'var(--red)' : 'var(--green)'}; color:${isAnom ? 'var(--red)' : 'var(--green)'}">
+        ${verdictText}
+      </div>
+      <div class="d-row" style="margin-top:28px">
+        <div class="d-label">Entity history (last ${entityHistory.length} events)</div>
+        ${histHtml}
+      </div>
+    `;
+  };
+
+  // 5. Bootstrap App
+  initHeaders();
+  renderKPIs();
+  renderFilters();
+  renderRows();
+
+});
+</script>
+</body>
+</html>

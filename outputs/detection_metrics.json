@@ -1,0 +1,17 @@
+{
+  "threshold_percentile": 95,
+  "threshold_value": 57.48076600001157,
+  "roc_auc": 0.9435237058285697,
+  "average_precision": 0.5920814822298691,
+  "precision_at_threshold": 0.5634050021939447,
+  "recall_at_threshold": 0.7877300613496933,
+  "confusion_matrix": {
+    "tn": 42955,
+    "fp": 995,
+    "fn": 346,
+    "tp": 1284
+  },
+  "n_flagged": 2279,
+  "n_true_anomalies": 1630,
+  "n_total": 45580
+}

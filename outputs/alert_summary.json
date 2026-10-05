@@ -1,0 +1,14 @@
+{
+  "total_events_scored": 45580,
+  "alerts_shown": 150,
+  "true_anomalies_in_queue": 108,
+  "precision_in_queue": 0.72,
+  "category_breakdown": {
+    "brute_force": 81,
+    "normal": 42,
+    "credential_stuffing": 15,
+    "lateral_movement": 7,
+    "low_and_slow_exfil": 4,
+    "device_spoofing": 1
+  }
+}

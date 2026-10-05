@@ -1,0 +1,3002 @@
+[
+  {
+    "event_id": "677bac2feb114fc0a50a9b62bf118b56",
+    "entity_id": "user::michellecherry_4619",
+    "entity_type": "user",
+    "timestamp": "2026-06-06 04:14:10.031962",
+    "risk_score": 100.0,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "202.19.11.0",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/api/v1/endpoint_15",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "709180f0acf4497381441e12f4fdfe3a",
+    "entity_id": "user::carlsonkristen_c23e",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 15:40:16.168471",
+    "risk_score": 98.0,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "153.34.14.40",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/file/dept_share/14",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": true
+  },
+  {
+    "event_id": "6fa0d222f824427b95965f4e7781618a",
+    "entity_id": "user::bellmatthew_c253",
+    "entity_type": "user",
+    "timestamp": "2026-06-16 08:41:20.895766",
+    "risk_score": 97.3,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "many identities from one source IP"
+    ],
+    "source_ip": "185.20.208.114",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/file/dept_share/25",
+    "auth_method": "token",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "f4bf4a639a314d8f9d3fa2f4ee91045b",
+    "entity_id": "svc::recent_b72b",
+    "entity_type": "service_account",
+    "timestamp": "2026-06-01 10:15:49.867865",
+    "risk_score": 95.0,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "unusually broad resource footprint"
+    ],
+    "source_ip": "27.123.239.8",
+    "geo_location": "Mumbai,IN",
+    "resource_accessed": "/file/dept_share/4",
+    "auth_method": "token",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": true
+  },
+  {
+    "event_id": "f0d9338f44a443d2a6b98b063201f1ca",
+    "entity_id": "user::ihorton_3dbf",
+    "entity_type": "user",
+    "timestamp": "2026-06-12 01:15:04.441971",
+    "risk_score": 94.8,
+    "predicted_category": "lateral_movement",
+    "ground_truth_label": "lateral_movement",
+    "reasons": [
+      "unusual command volume",
+      "first-time resource access",
+      "session length deviation"
+    ],
+    "source_ip": "195.228.68.85",
+    "geo_location": "Bengaluru,IN",
+    "resource_accessed": "device_fn/sensor_poll",
+    "auth_method": "password",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "2b28ae3aa0d84e67914deb1218132fd0",
+    "entity_id": "user::charlesvaughn_d39b",
+    "entity_type": "user",
+    "timestamp": "2026-06-16 08:41:14.895766",
+    "risk_score": 94.4,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "185.20.208.114",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/api/v1/endpoint_12",
+    "auth_method": "token",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "88654cc96b7d4a8aba30d2f5c8a52dc4",
+    "entity_id": "user::alexanderrobert_b1dd",
+    "entity_type": "user",
+    "timestamp": "2026-06-10 10:11:51.108626",
+    "risk_score": 91.4,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "164.37.69.164",
+    "geo_location": "London,GB",
+    "resource_accessed": "/file/dept_share/5",
+    "auth_method": "token",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "59ba272474e348f9bbcb1acea31fef48",
+    "entity_id": "user::natasha43_40fd",
+    "entity_type": "user",
+    "timestamp": "2026-06-21 07:12:14.679585",
+    "risk_score": 90.8,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "191.70.15.36",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/api/v1/endpoint_15",
+    "auth_method": "token",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "764a5f48f8de4a3484abf83fb55b96d5",
+    "entity_id": "user::gwright_3ed8",
+    "entity_type": "user",
+    "timestamp": "2026-06-16 08:41:32.895766",
+    "risk_score": 90.0,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "many identities from one source IP"
+    ],
+    "source_ip": "185.20.208.114",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "device_fn/sensor_poll",
+    "auth_method": "sso",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "765fcebaea554b06b4bc7bfa915ba1a5",
+    "entity_id": "user::michelle45_e0fa",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 11:09:25.655938",
+    "risk_score": 89.7,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "many identities from one source IP"
+    ],
+    "source_ip": "197.218.193.159",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "device_fn/config_read",
+    "auth_method": "sso",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "e27b5fc20b5c4be381c1b1c4f12d7fcf",
+    "entity_id": "user::hchapman_fb4f",
+    "entity_type": "user",
+    "timestamp": "2026-06-22 01:10:07.169675",
+    "risk_score": 89.5,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "41.112.29.107",
+    "geo_location": "Lagos,NG",
+    "resource_accessed": "/admin/audit_log",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "7c8ae128772c4088804d31bd6e11c32e",
+    "entity_id": "user::gabriellecameron_79ad",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 11:08:57.655938",
+    "risk_score": 89.4,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "many identities from one source IP"
+    ],
+    "source_ip": "197.218.193.159",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "device_fn/sensor_poll",
+    "auth_method": "sso",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "f641e7cb119040ad869db12d7082ad75",
+    "entity_id": "dev::ago_534d",
+    "entity_type": "edge_device",
+    "timestamp": "2026-06-01 10:08:55.458593",
+    "risk_score": 89.0,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "134.254.93.11",
+    "geo_location": "Lagos,NG",
+    "resource_accessed": "/file/dept_share/17",
+    "auth_method": "certificate",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "f78fbd97630a4c3dae9e0045b223d7a1",
+    "entity_id": "user::pstevens_3041",
+    "entity_type": "user",
+    "timestamp": "2026-06-02 12:46:21.226103",
+    "risk_score": 88.9,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "71.102.88.213",
+    "geo_location": "Moscow,RU",
+    "resource_accessed": "/finance/ledger",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": true
+  },
+  {
+    "event_id": "b665f12467b542f6becf3709ea920f0e",
+    "entity_id": "user::smitchell_94c2",
+    "entity_type": "user",
+    "timestamp": "2026-06-10 08:47:18.055266",
+    "risk_score": 88.6,
+    "predicted_category": "lateral_movement",
+    "ground_truth_label": "lateral_movement",
+    "reasons": [
+      "first-time resource access",
+      "abnormal event timing/burst",
+      "unusual command volume"
+    ],
+    "source_ip": "3.196.144.176",
+    "geo_location": "Bengaluru,IN",
+    "resource_accessed": "device_fn/config_read",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "59903ca7f52545cdb056d8cc753ec95d",
+    "entity_id": "user::dstokes_3bf6",
+    "entity_type": "user",
+    "timestamp": "2026-06-16 08:41:15.895766",
+    "risk_score": 88.3,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "185.20.208.114",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/api/v1/endpoint_15",
+    "auth_method": "password",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "a92775a00dfc4c4aae630a29f73a412a",
+    "entity_id": "user::rushmartin_0bbf",
+    "entity_type": "user",
+    "timestamp": "2026-06-26 22:16:02.735353",
+    "risk_score": 88.2,
+    "predicted_category": "lateral_movement",
+    "ground_truth_label": "lateral_movement",
+    "reasons": [
+      "unusual command volume",
+      "first-time resource access",
+      "session length deviation"
+    ],
+    "source_ip": "164.30.244.115",
+    "geo_location": "Sao Paulo,BR",
+    "resource_accessed": "/file/dept_share/4",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "6fc1a7ec7f374d52a82cce163248eb47",
+    "entity_id": "user::esanchez_f755",
+    "entity_type": "user",
+    "timestamp": "2026-06-19 05:09:30.391026",
+    "risk_score": 88.2,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "103.31.192.219",
+    "geo_location": "New York,US",
+    "resource_accessed": "/file/dept_share/22",
+    "auth_method": "password",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "efbe1b7fc4584c68b1fc25bd3f87b4cd",
+    "entity_id": "user::zlewis_289d",
+    "entity_type": "user",
+    "timestamp": "2026-06-02 10:48:09.419693",
+    "risk_score": 88.1,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "49.238.218.236",
+    "geo_location": "Bengaluru,IN",
+    "resource_accessed": "/file/dept_share/29",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "ba024b0f0a1d4b529f87a566d3499cdd",
+    "entity_id": "user::gilbertwilliam_2a44",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 13:48:00.486103",
+    "risk_score": 87.6,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "device fingerprint mismatch",
+      "unusually broad resource footprint"
+    ],
+    "source_ip": "208.169.78.166",
+    "geo_location": "Bengaluru,IN",
+    "resource_accessed": "/file/dept_share/11",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": true
+  },
+  {
+    "event_id": "d35a5f62e15a4f2fa12d8abcd23f7510",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-20 12:14:07.687856",
+    "risk_score": 87.3,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "148.141.162.133",
+    "geo_location": "Sao Paulo,BR",
+    "resource_accessed": "port:8080",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "b1978ab9833f40f3896af80f7014390f",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-11 21:53:49.132594",
+    "risk_score": 87.1,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "49.247.155.16",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/file/dept_share/3",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "c4bf05ec8e6b496abef819e30a74fe2d",
+    "entity_id": "user::xfox_671b",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 08:57:05.744828",
+    "risk_score": 86.9,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "unusually broad resource footprint",
+      "unusual command volume",
+      "first-time resource access"
+    ],
+    "source_ip": "194.159.78.189",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/api/v1/endpoint_24",
+    "auth_method": "sso",
+    "device_os": "Linux 5.15",
+    "cold_start": true
+  },
+  {
+    "event_id": "d891de62cf5b45edb38821ac39462c25",
+    "entity_id": "user::zlewis_289d",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 14:16:41.650477",
+    "risk_score": 86.9,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "101.59.102.11",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/api/v1/endpoint_26",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "a25f0cca2d2342bebcb427b32048bad9",
+    "entity_id": "user::jimenezryan_fcb5",
+    "entity_type": "user",
+    "timestamp": "2026-06-17 19:39:09.607241",
+    "risk_score": 86.9,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "52.111.89.18",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/api/v1/endpoint_26",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "1be49d62fdc8410e9349737a0949fdbd",
+    "entity_id": "user::holmeskevin_f15d",
+    "entity_type": "user",
+    "timestamp": "2026-06-10 01:08:37.093810",
+    "risk_score": 86.9,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "153.92.81.194",
+    "geo_location": "London,GB",
+    "resource_accessed": "/api/v1/endpoint_16",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "3ed7d207d3154bae8d32a93e14e40be8",
+    "entity_id": "user::melissamcdonald_5285",
+    "entity_type": "user",
+    "timestamp": "2026-06-03 13:50:46.929860",
+    "risk_score": 86.7,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "device fingerprint mismatch",
+      "unusual command volume"
+    ],
+    "source_ip": "213.216.176.87",
+    "geo_location": "Sao Paulo,BR",
+    "resource_accessed": "port:3306",
+    "auth_method": "password",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": true
+  },
+  {
+    "event_id": "9ddbbb77aee4420cb197af7b69e66839",
+    "entity_id": "user::ujenkins_fe85",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 11:09:31.655938",
+    "risk_score": 86.7,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "many identities from one source IP"
+    ],
+    "source_ip": "197.218.193.159",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/api/v1/endpoint_0",
+    "auth_method": "sso",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "8a98620b73f9464aa9ff0eaf79bd2371",
+    "entity_id": "user::jonathanthompson_1068",
+    "entity_type": "user",
+    "timestamp": "2026-06-28 22:17:39.982520",
+    "risk_score": 86.5,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "77.215.24.102",
+    "geo_location": "Singapore,SG",
+    "resource_accessed": "/api/v1/endpoint_21",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "8d795c5185b34eeeaab33b1d15096036",
+    "entity_id": "svc::across_3c66",
+    "entity_type": "service_account",
+    "timestamp": "2026-06-23 11:09:43.655938",
+    "risk_score": 86.4,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "197.218.193.159",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/file/dept_share/30",
+    "auth_method": "certificate",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "6e44956e445846bdb2280daf948aa8db",
+    "entity_id": "user::zlewis_289d",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 14:15:43.650477",
+    "risk_score": 86.3,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "101.59.102.11",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/file/dept_share/34",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "309815c2a20742e194d6d45ef26477ca",
+    "entity_id": "dev::list_5451",
+    "entity_type": "edge_device",
+    "timestamp": "2026-06-01 18:48:25.916140",
+    "risk_score": 86.2,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusually broad resource footprint",
+      "implausible geo-velocity"
+    ],
+    "source_ip": "129.229.107.138",
+    "geo_location": "New York,US",
+    "resource_accessed": "/file/dept_share/21",
+    "auth_method": "certificate",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "7b7b672535774801b11d03c172680954",
+    "entity_id": "user::debra31_ad44",
+    "entity_type": "user",
+    "timestamp": "2026-06-15 12:33:53.131238",
+    "risk_score": 85.8,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "53.114.142.102",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/admin/user_mgmt",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "baf3d5c331174f26bd45894668e10c07",
+    "entity_id": "user::xfox_671b",
+    "entity_type": "user",
+    "timestamp": "2026-06-15 08:02:41.577604",
+    "risk_score": 85.6,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "204.91.140.254",
+    "geo_location": "Mumbai,IN",
+    "resource_accessed": "/api/v1/endpoint_24",
+    "auth_method": "sso",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "b1819362f8b64f43a7f1f8dc1cee2187",
+    "entity_id": "user::zlewis_289d",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 14:15:01.650477",
+    "risk_score": 85.6,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "101.59.102.11",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/api/v1/endpoint_25",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": true
+  },
+  {
+    "event_id": "ff34d20b8d9c4f8794ca6ef419c18c43",
+    "entity_id": "user::ywelch_1a16",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 16:50:26.297329",
+    "risk_score": 85.6,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusually broad resource footprint",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "6.68.120.87",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/api/v1/endpoint_24",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": true
+  },
+  {
+    "event_id": "9a219e35337e479bbc6423bf65f5cf68",
+    "entity_id": "user::dperry_aaa3",
+    "entity_type": "user",
+    "timestamp": "2026-06-14 07:28:57.942480",
+    "risk_score": 85.4,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "140.194.54.77",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/api/v1/endpoint_3",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "229e9330dc07446881dedb22c5f68d96",
+    "entity_id": "user::zlewis_289d",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 14:15:51.650477",
+    "risk_score": 85.4,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "101.59.102.11",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "port:1883",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "5e85f02095a1418b976de5ced0a15ab4",
+    "entity_id": "user::spenceamanda_05d7",
+    "entity_type": "user",
+    "timestamp": "2026-06-16 08:41:19.895766",
+    "risk_score": 85.3,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "185.20.208.114",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/file/dept_share/20",
+    "auth_method": "sso",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "5ebb81b021f54413bad014357b3ce590",
+    "entity_id": "user::elizabeth14_35c5",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 11:09:49.655938",
+    "risk_score": 85.2,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "197.218.193.159",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/api/v1/endpoint_24",
+    "auth_method": "token",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "72b36135537649b9ab6228e3a6ed9de7",
+    "entity_id": "user::uross_ce29",
+    "entity_type": "user",
+    "timestamp": "2026-06-05 08:21:20.163223",
+    "risk_score": 85.1,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "198.236.194.145",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/file/dept_share/30",
+    "auth_method": "sso",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "ee0040e432ab43e5b323979efb088ba8",
+    "entity_id": "user::jimmy55_eabb",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 12:25:15.736400",
+    "risk_score": 84.9,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "150.118.164.82",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/api/v1/endpoint_14",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "7152f8f2159346808b4b1f0c89274efd",
+    "entity_id": "user::gabriellecameron_79ad",
+    "entity_type": "user",
+    "timestamp": "2026-06-14 18:01:27.860705",
+    "risk_score": 84.9,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "unusual time-of-day"
+    ],
+    "source_ip": "169.93.241.191",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/finance/ledger",
+    "auth_method": "sso",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "e081a2981d1246f6a02eab053039b5d9",
+    "entity_id": "user::greenmark_75ab",
+    "entity_type": "user",
+    "timestamp": "2026-06-04 00:12:47.040341",
+    "risk_score": 84.7,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "16.134.90.90",
+    "geo_location": "Singapore,SG",
+    "resource_accessed": "port:1883",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "dc55b9e5ac6f4bcdaa7fc17dbf8f7af1",
+    "entity_id": "user::michellecherry_4619",
+    "entity_type": "user",
+    "timestamp": "2026-06-06 04:14:58.031962",
+    "risk_score": 84.5,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "202.19.11.0",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/api/v1/endpoint_29",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "4e5698fa68d24a958ba487232281dbe2",
+    "entity_id": "user::derrick99_060c",
+    "entity_type": "user",
+    "timestamp": "2026-06-27 00:47:35.052089",
+    "risk_score": 84.4,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "184.2.207.84",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/api/v1/endpoint_10",
+    "auth_method": "password",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "ec04dbc7f7d54f6d9a27106889b22a1d",
+    "entity_id": "user::kmaldonado_f45f",
+    "entity_type": "user",
+    "timestamp": "2026-06-10 01:04:03.546401",
+    "risk_score": 84.4,
+    "predicted_category": "low_and_slow_exfil",
+    "ground_truth_label": "low_and_slow_exfil",
+    "reasons": [
+      "session length deviation",
+      "first-time resource access",
+      "unusual command volume"
+    ],
+    "source_ip": "106.49.87.8",
+    "geo_location": "New York,US",
+    "resource_accessed": "/file/dept_share/17",
+    "auth_method": "token",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "6e683d0ff88344dd9d963834fb5d9c23",
+    "entity_id": "dev::somebody_dd87",
+    "entity_type": "edge_device",
+    "timestamp": "2026-06-23 11:09:57.655938",
+    "risk_score": 84.3,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "many identities from one source IP"
+    ],
+    "source_ip": "197.218.193.159",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/file/dept_share/34",
+    "auth_method": "certificate",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "32b739defc8c4e3bb15c3727ff76ae9a",
+    "entity_id": "user::lori44_da50",
+    "entity_type": "user",
+    "timestamp": "2026-06-07 15:19:31.988106",
+    "risk_score": 84.3,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "128.74.11.159",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/file/dept_share/21",
+    "auth_method": "token",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "3c4fe14ab2eb4dbfb3e50b3d9b3ac863",
+    "entity_id": "user::carlsonkristen_c23e",
+    "entity_type": "user",
+    "timestamp": "2026-06-02 17:19:08.296754",
+    "risk_score": 84.2,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "unusually broad resource footprint"
+    ],
+    "source_ip": "202.218.214.211",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/api/v1/endpoint_10",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "a6ca31da63884931928eb228992e09c9",
+    "entity_id": "user::michellecherry_4619",
+    "entity_type": "user",
+    "timestamp": "2026-06-06 04:15:09.031962",
+    "risk_score": 84.1,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "202.19.11.0",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/api/v1/endpoint_7",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "f8262a7ce18d4b4e99659c83c4ffd388",
+    "entity_id": "user::tarabishop_391d",
+    "entity_type": "user",
+    "timestamp": "2026-06-15 05:22:00.269395",
+    "risk_score": 84.1,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "29.189.69.108",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/api/v1/endpoint_11",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "e5a0789873bc4dccbacc7120d6eb92f1",
+    "entity_id": "user::amandaknight_0d78",
+    "entity_type": "user",
+    "timestamp": "2026-06-02 15:24:40.439480",
+    "risk_score": 84.0,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "136.190.138.33",
+    "geo_location": "Berlin,DE",
+    "resource_accessed": "/file/dept_share/13",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": true
+  },
+  {
+    "event_id": "68cca6f91cfa49418e7963c4a57daef6",
+    "entity_id": "user::jonathanthompson_1068",
+    "entity_type": "user",
+    "timestamp": "2026-06-28 22:18:03.982520",
+    "risk_score": 83.8,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "77.215.24.102",
+    "geo_location": "Singapore,SG",
+    "resource_accessed": "/file/dept_share/23",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "ec6b12ed537e43638011140af7e3cfc3",
+    "entity_id": "user::zlewis_289d",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 14:16:02.650477",
+    "risk_score": 83.7,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "101.59.102.11",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/file/dept_share/17",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "9d00c5b26fc94cbf8089eab78609166b",
+    "entity_id": "user::langjennifer_abe2",
+    "entity_type": "user",
+    "timestamp": "2026-06-13 07:18:38.938703",
+    "risk_score": 83.6,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "187.147.30.4",
+    "geo_location": "London,GB",
+    "resource_accessed": "port:3306",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "8766af9bcca148418050ef5b457c15ab",
+    "entity_id": "user::ebennett_5d5d",
+    "entity_type": "user",
+    "timestamp": "2026-06-12 09:22:35.763986",
+    "risk_score": 83.6,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "112.143.139.73",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/api/v1/endpoint_10",
+    "auth_method": "token",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "3bc505b162984a8fba4d1751cc414e7e",
+    "entity_id": "user::dperry_aaa3",
+    "entity_type": "user",
+    "timestamp": "2026-06-14 07:27:50.942480",
+    "risk_score": 83.6,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "140.194.54.77",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/file/dept_share/32",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "92aa9dd41c0a49d49eb20f3f70802909",
+    "entity_id": "user::michellejames_3a52",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 14:35:43.975375",
+    "risk_score": 83.5,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "204.80.99.39",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/api/v1/endpoint_4",
+    "auth_method": "password",
+    "device_os": "iOS 17",
+    "cold_start": true
+  },
+  {
+    "event_id": "712a9a802d894717abc4b7c073b5e741",
+    "entity_id": "user::tarabishop_391d",
+    "entity_type": "user",
+    "timestamp": "2026-06-15 05:22:05.269395",
+    "risk_score": 83.5,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "29.189.69.108",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/api/v1/endpoint_2",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "1a8fbbe429504f378df56a0a29e173b8",
+    "entity_id": "user::tyleraguilar_a519",
+    "entity_type": "user",
+    "timestamp": "2026-06-05 01:00:16.260582",
+    "risk_score": 83.2,
+    "predicted_category": "low_and_slow_exfil",
+    "ground_truth_label": "low_and_slow_exfil",
+    "reasons": [
+      "session length deviation",
+      "first-time resource access",
+      "unusual command volume"
+    ],
+    "source_ip": "41.25.246.201",
+    "geo_location": "Mumbai,IN",
+    "resource_accessed": "/file/dept_share/11",
+    "auth_method": "password",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "79187ba8bf1843fda5125817ff8bd0df",
+    "entity_id": "user::smitchell_94c2",
+    "entity_type": "user",
+    "timestamp": "2026-06-10 08:41:18.055266",
+    "risk_score": 83.1,
+    "predicted_category": "lateral_movement",
+    "ground_truth_label": "lateral_movement",
+    "reasons": [
+      "first-time resource access",
+      "unusual command volume",
+      "session length deviation"
+    ],
+    "source_ip": "172.73.120.252",
+    "geo_location": "Bengaluru,IN",
+    "resource_accessed": "/file/dept_share/6",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "e3886ae9c8e64688b0d018a08cd32c25",
+    "entity_id": "user::tarabishop_391d",
+    "entity_type": "user",
+    "timestamp": "2026-06-15 05:21:49.269395",
+    "risk_score": 83.0,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "29.189.69.108",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/api/v1/endpoint_8",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "17ae225ad8094199b5dec170e5f87ff3",
+    "entity_id": "dev::interest_bd8b",
+    "entity_type": "edge_device",
+    "timestamp": "2026-06-23 11:09:40.655938",
+    "risk_score": 83.0,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "many identities from one source IP"
+    ],
+    "source_ip": "197.218.193.159",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/api/v1/endpoint_6",
+    "auth_method": "certificate",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "621680d5866744ebb1a705e9329a3bc9",
+    "entity_id": "user::kmaldonado_f45f",
+    "entity_type": "user",
+    "timestamp": "2026-06-09 03:23:27.745232",
+    "risk_score": 82.9,
+    "predicted_category": "low_and_slow_exfil",
+    "ground_truth_label": "low_and_slow_exfil",
+    "reasons": [
+      "session length deviation",
+      "first-time resource access",
+      "unusual command volume"
+    ],
+    "source_ip": "162.128.208.176",
+    "geo_location": "New York,US",
+    "resource_accessed": "/eng/source_repo",
+    "auth_method": "token",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "42ab8adc59ba42b695f24058d972efd3",
+    "entity_id": "user::dperry_aaa3",
+    "entity_type": "user",
+    "timestamp": "2026-06-14 07:28:24.942480",
+    "risk_score": 82.8,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "140.194.54.77",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/file/dept_share/16",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "34ccb5e7949541c1af4b64da1dd7431a",
+    "entity_id": "user::holmeskevin_f15d",
+    "entity_type": "user",
+    "timestamp": "2026-06-10 01:08:25.093810",
+    "risk_score": 82.7,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "153.92.81.194",
+    "geo_location": "London,GB",
+    "resource_accessed": "port:3306",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "0b7944870b4b4be39cc5a4dba55ac8fc",
+    "entity_id": "user::derrick99_060c",
+    "entity_type": "user",
+    "timestamp": "2026-06-27 00:48:20.052089",
+    "risk_score": 82.7,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "184.2.207.84",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/file/dept_share/18",
+    "auth_method": "password",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "d31295e66cab4e40967e445428f2b9ae",
+    "entity_id": "user::rushmadison_f9eb",
+    "entity_type": "user",
+    "timestamp": "2026-06-27 18:12:07.694240",
+    "risk_score": 82.7,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "156.248.231.228",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "device_fn/config_read",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "1640045f9bba4ffa8deffc89ed8772b3",
+    "entity_id": "user::esanchez_f755",
+    "entity_type": "user",
+    "timestamp": "2026-06-08 11:46:38.302251",
+    "risk_score": 82.7,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusually broad resource footprint",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "6.62.223.181",
+    "geo_location": "Singapore,SG",
+    "resource_accessed": "/api/v1/endpoint_3",
+    "auth_method": "password",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "aba7e51daa174a7393dceb08cb405c56",
+    "entity_id": "user::whenry_ffdf",
+    "entity_type": "user",
+    "timestamp": "2026-06-18 22:57:51.553859",
+    "risk_score": 82.7,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "47.239.86.50",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/api/v1/endpoint_8",
+    "auth_method": "password",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "b4692acf3d4c4e5bad4663b0e31c3601",
+    "entity_id": "user::dperry_aaa3",
+    "entity_type": "user",
+    "timestamp": "2026-06-14 07:28:35.942480",
+    "risk_score": 82.6,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "140.194.54.77",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/file/dept_share/33",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "d8aef213164545ad84cb21bee9a17d2b",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-11 21:53:13.132594",
+    "risk_score": 82.5,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "49.247.155.16",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/file/dept_share/3",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "758ad193868d4872a28567da57d89faf",
+    "entity_id": "svc::find_0ea4",
+    "entity_type": "service_account",
+    "timestamp": "2026-06-01 03:10:36.441344",
+    "risk_score": 82.5,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "device fingerprint mismatch",
+      "unusually broad resource footprint"
+    ],
+    "source_ip": "3.147.5.123",
+    "geo_location": "London,GB",
+    "resource_accessed": "/file/dept_share/15",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": true
+  },
+  {
+    "event_id": "badd26e0de15451bba69c0f97cc6f576",
+    "entity_id": "user::zlewis_289d",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 11:09:16.655938",
+    "risk_score": 82.4,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "many identities from one source IP",
+      "unusual command volume"
+    ],
+    "source_ip": "197.218.193.159",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/api/v1/endpoint_26",
+    "auth_method": "password",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "bd5fb64851f14165adbcec6dae605d00",
+    "entity_id": "user::rushmadison_f9eb",
+    "entity_type": "user",
+    "timestamp": "2026-06-27 18:12:18.694240",
+    "risk_score": 82.3,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "156.248.231.228",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "device_fn/config_read",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "c436e7716fd6412a80d1fb4c785eb3e6",
+    "entity_id": "user::psanchez_3af4",
+    "entity_type": "user",
+    "timestamp": "2026-06-03 07:36:37.366563",
+    "risk_score": 82.3,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "117.117.106.19",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "device_fn/actuator_cmd",
+    "auth_method": "password",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "1225e13ba0ed4f17891d40e5df76478b",
+    "entity_id": "user::derrick99_060c",
+    "entity_type": "user",
+    "timestamp": "2026-06-27 00:47:42.052089",
+    "risk_score": 82.3,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "184.2.207.84",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/api/v1/endpoint_4",
+    "auth_method": "password",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "3372c6a09d3941f4a7e5c914be174978",
+    "entity_id": "user::charlesvaughn_d39b",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 05:48:21.164264",
+    "risk_score": 82.3,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "206.255.114.132",
+    "geo_location": "Delhi,IN",
+    "resource_accessed": "/api/v1/endpoint_7",
+    "auth_method": "token",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "5ff83ceaaf194193afc492dd539e5e6f",
+    "entity_id": "user::hchapman_fb4f",
+    "entity_type": "user",
+    "timestamp": "2026-06-22 01:10:11.169675",
+    "risk_score": 82.2,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "41.112.29.107",
+    "geo_location": "Lagos,NG",
+    "resource_accessed": "/file/dept_share/38",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "03dd682c56c2482d9a240a2913b0945b",
+    "entity_id": "user::jimmy55_eabb",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 12:24:02.736400",
+    "risk_score": 82.2,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "150.118.164.82",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/api/v1/endpoint_2",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": true
+  },
+  {
+    "event_id": "9db47e1b92b443df897373c59586611b",
+    "entity_id": "user::holmeskevin_f15d",
+    "entity_type": "user",
+    "timestamp": "2026-06-10 01:09:14.093810",
+    "risk_score": 82.2,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "153.92.81.194",
+    "geo_location": "London,GB",
+    "resource_accessed": "device_fn/control_write",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "ac8d9fbe0742485f9de8c83a2b6892b1",
+    "entity_id": "user::kingcynthia_51f0",
+    "entity_type": "user",
+    "timestamp": "2026-06-15 16:39:35.536426",
+    "risk_score": 82.2,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "abnormal event timing/burst",
+      "unusual time-of-day"
+    ],
+    "source_ip": "29.205.36.77",
+    "geo_location": "New York,US",
+    "resource_accessed": "/api/v1/endpoint_1",
+    "auth_method": "sso",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "822df78bacde430da1801689a2009f89",
+    "entity_id": "user::holmeskevin_f15d",
+    "entity_type": "user",
+    "timestamp": "2026-06-10 01:09:27.093810",
+    "risk_score": 82.1,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "153.92.81.194",
+    "geo_location": "London,GB",
+    "resource_accessed": "/api/v1/endpoint_27",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "4cd6cc5ab98649e7adbf4adecb25e619",
+    "entity_id": "user::tarabishop_391d",
+    "entity_type": "user",
+    "timestamp": "2026-06-15 05:21:35.269395",
+    "risk_score": 82.1,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "29.189.69.108",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/api/v1/endpoint_7",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "2b6a1819538a4ccc9de45ff496f21f4a",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-11 21:53:30.132594",
+    "risk_score": 82.0,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "49.247.155.16",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/eng/ci_pipeline",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "d78551c5622042d4b721a87b3d278966",
+    "entity_id": "user::erikarush_ee4e",
+    "entity_type": "user",
+    "timestamp": "2026-06-08 18:26:05.910673",
+    "risk_score": 82.0,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "149.191.122.70",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/file/dept_share/31",
+    "auth_method": "sso",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "bb072d411da04e4c8c8ebc5476f58913",
+    "entity_id": "user::velezchristopher_035b",
+    "entity_type": "user",
+    "timestamp": "2026-06-08 21:19:28.025277",
+    "risk_score": 82.0,
+    "predicted_category": "lateral_movement",
+    "ground_truth_label": "lateral_movement",
+    "reasons": [
+      "unusual command volume",
+      "first-time resource access",
+      "session length deviation"
+    ],
+    "source_ip": "199.96.2.225",
+    "geo_location": "Bengaluru,IN",
+    "resource_accessed": "/api/v1/endpoint_5",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "7ebe463578854c558adee43594293233",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 13:15:46.446220",
+    "risk_score": 81.9,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusually broad resource footprint",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "174.122.221.43",
+    "geo_location": "Sao Paulo,BR",
+    "resource_accessed": "device_fn/sensor_poll",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": true
+  },
+  {
+    "event_id": "ee722c88f46d464fa53c924f2c64a1bd",
+    "entity_id": "user::zlewis_289d",
+    "entity_type": "user",
+    "timestamp": "2026-06-22 20:01:56.879343",
+    "risk_score": 81.7,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "80.21.246.145",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/file/dept_share/29",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "63c2e0690bcf4386b91dbf4e6261da00",
+    "entity_id": "user::gilbertwilliam_2a44",
+    "entity_type": "user",
+    "timestamp": "2026-06-10 10:20:27.013782",
+    "risk_score": 81.7,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "163.28.231.177",
+    "geo_location": "Bengaluru,IN",
+    "resource_accessed": "/api/v1/endpoint_1",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "ffef1234b1e54f79b59cae49f2b953f9",
+    "entity_id": "user::marie16_6ae1",
+    "entity_type": "user",
+    "timestamp": "2026-06-08 18:43:44.487424",
+    "risk_score": 81.6,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "abnormal event timing/burst",
+      "unusual command volume"
+    ],
+    "source_ip": "204.60.184.213",
+    "geo_location": "London,GB",
+    "resource_accessed": "/api/v1/endpoint_12",
+    "auth_method": "biometric",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "c607600a261f4bf19ec15783e534e37e",
+    "entity_id": "user::michellecherry_4619",
+    "entity_type": "user",
+    "timestamp": "2026-06-06 04:14:41.031962",
+    "risk_score": 81.6,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "202.19.11.0",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/api/v1/endpoint_28",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "0fa3e2e4bf8845a5ad2fd544f9f4dae6",
+    "entity_id": "user::tarabishop_391d",
+    "entity_type": "user",
+    "timestamp": "2026-06-15 05:22:17.269395",
+    "risk_score": 81.5,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "29.189.69.108",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/finance/ledger",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "2cd902e0b9764040ac39dd01e2ac937e",
+    "entity_id": "user::kmaldonado_f45f",
+    "entity_type": "user",
+    "timestamp": "2026-06-02 09:01:47.450318",
+    "risk_score": 81.5,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusually broad resource footprint",
+      "unusual command volume"
+    ],
+    "source_ip": "16.73.159.56",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/file/dept_share/9",
+    "auth_method": "token",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "3b3b1e33bbc44f90bcf71d07eeb119b0",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-11 21:53:16.132594",
+    "risk_score": 81.5,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "49.247.155.16",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/eng/ci_pipeline",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "6262fb26622d4fde928a7f5ac31ec78f",
+    "entity_id": "user::ebennett_5d5d",
+    "entity_type": "user",
+    "timestamp": "2026-06-12 09:22:18.763986",
+    "risk_score": 81.4,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "112.143.139.73",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "device_fn/control_write",
+    "auth_method": "token",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "22a07892f43e4644b8a0685b6a475b34",
+    "entity_id": "user::derrick99_060c",
+    "entity_type": "user",
+    "timestamp": "2026-06-27 00:47:23.052089",
+    "risk_score": 81.3,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "184.2.207.84",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/api/v1/endpoint_19",
+    "auth_method": "password",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "498bd000927b440f85cd0bd15aeebb31",
+    "entity_id": "user::jimenezryan_fcb5",
+    "entity_type": "user",
+    "timestamp": "2026-06-17 19:39:11.607241",
+    "risk_score": 81.2,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "52.111.89.18",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/file/dept_share/4",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "08533f96815c4417ba6e755757492e6c",
+    "entity_id": "user::charlesvaughn_d39b",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 05:48:52.164264",
+    "risk_score": 81.2,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "206.255.114.132",
+    "geo_location": "Delhi,IN",
+    "resource_accessed": "/file/dept_share/14",
+    "auth_method": "token",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "a369e7e352d148c6b71ae56f6cbb400f",
+    "entity_id": "user::derrick99_060c",
+    "entity_type": "user",
+    "timestamp": "2026-06-27 00:47:51.052089",
+    "risk_score": 81.2,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "184.2.207.84",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/api/v1/endpoint_11",
+    "auth_method": "password",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "e8aabc2f159f4d7f896d66ec4c6d7be0",
+    "entity_id": "user::kelly79_bb87",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 11:08:43.655938",
+    "risk_score": 81.2,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "197.218.193.159",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "/api/v1/endpoint_10",
+    "auth_method": "password",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "9151229e2db8441ab74fe4257bfa1648",
+    "entity_id": "user::pstevens_3041",
+    "entity_type": "user",
+    "timestamp": "2026-06-08 17:42:55.596482",
+    "risk_score": 81.2,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "large geographic jump"
+    ],
+    "source_ip": "25.190.28.110",
+    "geo_location": "Bengaluru,IN",
+    "resource_accessed": "/file/dept_share/32",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "ce9cea7a49484c1b96e5e968a3070888",
+    "entity_id": "user::michellecherry_4619",
+    "entity_type": "user",
+    "timestamp": "2026-06-06 04:14:20.031962",
+    "risk_score": 81.1,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "202.19.11.0",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/eng/source_repo",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "dfe551b783884f7cbede57de43abe1db",
+    "entity_id": "user::langjennifer_abe2",
+    "entity_type": "user",
+    "timestamp": "2026-06-08 12:12:36.667373",
+    "risk_score": 81.1,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "186.123.151.25",
+    "geo_location": "Lagos,NG",
+    "resource_accessed": "/file/dept_share/2",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "9f9fff4cd7b04e54845012db2c097b3a",
+    "entity_id": "user::hchapman_fb4f",
+    "entity_type": "user",
+    "timestamp": "2026-06-22 01:10:34.169675",
+    "risk_score": 81.0,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "41.112.29.107",
+    "geo_location": "Lagos,NG",
+    "resource_accessed": "/file/dept_share/8",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "34603a0032ab4601a0d96988a3d59ad5",
+    "entity_id": "user::charlesvaughn_d39b",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 05:48:48.164264",
+    "risk_score": 81.0,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "206.255.114.132",
+    "geo_location": "Delhi,IN",
+    "resource_accessed": "/api/v1/endpoint_7",
+    "auth_method": "token",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "9be4e203ebd24681a1e81dc269f9d8a1",
+    "entity_id": "user::ldrake_7288",
+    "entity_type": "user",
+    "timestamp": "2026-06-28 08:17:09.884399",
+    "risk_score": 80.9,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual time-of-day",
+      "unusual command volume"
+    ],
+    "source_ip": "168.14.136.220",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/api/v1/endpoint_28",
+    "auth_method": "biometric",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "49fad2c63d8e4795801b7a2c3edab048",
+    "entity_id": "user::charlesvaughn_d39b",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 05:48:45.164264",
+    "risk_score": 80.9,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "206.255.114.132",
+    "geo_location": "Delhi,IN",
+    "resource_accessed": "/file/dept_share/34",
+    "auth_method": "token",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "63c09c2876da463e8cf54bf29e96c340",
+    "entity_id": "user::langjennifer_abe2",
+    "entity_type": "user",
+    "timestamp": "2026-06-13 07:18:05.938703",
+    "risk_score": 80.9,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "187.147.30.4",
+    "geo_location": "London,GB",
+    "resource_accessed": "/file/dept_share/2",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "4d870316008140559770a0cb88f1cb0a",
+    "entity_id": "user::taylor75_c931",
+    "entity_type": "user",
+    "timestamp": "2026-06-06 11:34:16.210029",
+    "risk_score": 80.8,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "172.88.35.215",
+    "geo_location": "New York,US",
+    "resource_accessed": "/file/dept_share/24",
+    "auth_method": "password",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "f2eb84fdc8b64f919322fdf7ff4d2f16",
+    "entity_id": "user::ebennett_5d5d",
+    "entity_type": "user",
+    "timestamp": "2026-06-12 09:22:39.763986",
+    "risk_score": 80.8,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "112.143.139.73",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/file/dept_share/28",
+    "auth_method": "token",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "6c35bf63007249ef8a81464752e91a16",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-11 21:53:36.132594",
+    "risk_score": 80.7,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "49.247.155.16",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/api/v1/endpoint_20",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "dab9c75e90e842319c5a87c4601ed561",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-11 21:53:51.132594",
+    "risk_score": 80.7,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "49.247.155.16",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/api/v1/endpoint_13",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "b28bf9c9d50347f3b83d235d398b7a3c",
+    "entity_id": "svc::purpose_e0f6",
+    "entity_type": "service_account",
+    "timestamp": "2026-06-20 12:13:29.093144",
+    "risk_score": 80.7,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "device fingerprint mismatch",
+      "unusual command volume"
+    ],
+    "source_ip": "50.60.36.124",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/eng/ci_pipeline",
+    "auth_method": "certificate",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "75b707cd71864599a55fb69fc0faf971",
+    "entity_id": "user::xfox_671b",
+    "entity_type": "user",
+    "timestamp": "2026-06-02 06:02:56.732301",
+    "risk_score": 80.7,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "unusually broad resource footprint"
+    ],
+    "source_ip": "82.4.121.83",
+    "geo_location": "Mumbai,IN",
+    "resource_accessed": "/file/dept_share/21",
+    "auth_method": "sso",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "717b9483ff3c424fa4f97fddd8b197d3",
+    "entity_id": "dev::every_ab30",
+    "entity_type": "edge_device",
+    "timestamp": "2026-06-01 09:14:41.233578",
+    "risk_score": 80.7,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "unusually broad resource footprint"
+    ],
+    "source_ip": "205.67.212.158",
+    "geo_location": "Sao Paulo,BR",
+    "resource_accessed": "device_fn/telemetry_read",
+    "auth_method": "certificate",
+    "device_os": "Android 14",
+    "cold_start": true
+  },
+  {
+    "event_id": "8b98c4ca77574e19a53f8551e2190934",
+    "entity_id": "user::natasha43_40fd",
+    "entity_type": "user",
+    "timestamp": "2026-06-21 07:12:48.679585",
+    "risk_score": 80.4,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "191.70.15.36",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/api/v1/endpoint_1",
+    "auth_method": "token",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "ababc4d99b9b4d3eaeb598854b5e48f1",
+    "entity_id": "svc::recent_b72b",
+    "entity_type": "service_account",
+    "timestamp": "2026-06-02 12:34:46.411691",
+    "risk_score": 80.4,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "75.254.32.34",
+    "geo_location": "Mumbai,IN",
+    "resource_accessed": "/api/v1/endpoint_21",
+    "auth_method": "token",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "1373c1af0a5b4375b950375b2c135a20",
+    "entity_id": "user::uross_ce29",
+    "entity_type": "user",
+    "timestamp": "2026-06-21 07:45:19.733108",
+    "risk_score": 80.2,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "175.129.161.122",
+    "geo_location": "London,GB",
+    "resource_accessed": "/file/dept_share/38",
+    "auth_method": "sso",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "9ee46a28b2f54a87bfa49350135728a4",
+    "entity_id": "dev::throw_0b7f",
+    "entity_type": "edge_device",
+    "timestamp": "2026-06-05 00:21:48.219376",
+    "risk_score": 80.2,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "93.132.163.158",
+    "geo_location": "Berlin,DE",
+    "resource_accessed": "/api/v1/endpoint_5",
+    "auth_method": "certificate",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "bef7b114c0594b1c9f1a7549cc21153f",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-07 11:38:55.081811",
+    "risk_score": 80.1,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "146.235.35.40",
+    "geo_location": "Sao Paulo,BR",
+    "resource_accessed": "/file/dept_share/0",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "cff171c4dec04fb49dbb47321e5a3c82",
+    "entity_id": "dev::attack_2b2e",
+    "entity_type": "edge_device",
+    "timestamp": "2026-06-02 01:14:00.589121",
+    "risk_score": 80.0,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "unusually broad resource footprint"
+    ],
+    "source_ip": "141.163.190.149",
+    "geo_location": "New York,US",
+    "resource_accessed": "/file/dept_share/18",
+    "auth_method": "certificate",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "d6d6698de8a24d9dace6b2fd50902fe1",
+    "entity_id": "user::phudson_737a",
+    "entity_type": "user",
+    "timestamp": "2026-06-20 14:53:31.143464",
+    "risk_score": 80.0,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "154.81.42.67",
+    "geo_location": "New York,US",
+    "resource_accessed": "/api/v1/endpoint_16",
+    "auth_method": "sso",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "40322bb927b44d23a2894c961680d520",
+    "entity_id": "user::carlsonkristen_c23e",
+    "entity_type": "user",
+    "timestamp": "2026-06-18 20:45:13.071270",
+    "risk_score": 79.9,
+    "predicted_category": "lateral_movement",
+    "ground_truth_label": "lateral_movement",
+    "reasons": [
+      "unusual command volume",
+      "first-time resource access",
+      "session length deviation"
+    ],
+    "source_ip": "52.112.69.55",
+    "geo_location": "New York,US",
+    "resource_accessed": "/file/dept_share/33",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "ad102f9e6eb64c5a8dbc78bbab315fb3",
+    "entity_id": "user::lori44_da50",
+    "entity_type": "user",
+    "timestamp": "2026-06-07 15:19:16.988106",
+    "risk_score": 79.8,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "128.74.11.159",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/file/dept_share/12",
+    "auth_method": "token",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "058dc82dbf26431899647f931a11dcfe",
+    "entity_id": "user::moralescharles_a848",
+    "entity_type": "user",
+    "timestamp": "2026-06-14 13:10:21.352822",
+    "risk_score": 79.6,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "136.77.150.21",
+    "geo_location": "Moscow,RU",
+    "resource_accessed": "/file/dept_share/38",
+    "auth_method": "password",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "2936acdf6f0449dba5d1bbbfe2778a37",
+    "entity_id": "user::dperry_aaa3",
+    "entity_type": "user",
+    "timestamp": "2026-06-14 07:27:47.942480",
+    "risk_score": 79.6,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "140.194.54.77",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/api/v1/endpoint_10",
+    "auth_method": "token",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "804e0dcb64e84f968cdae21d74ca8062",
+    "entity_id": "user::jonathanthompson_1068",
+    "entity_type": "user",
+    "timestamp": "2026-06-28 22:17:56.982520",
+    "risk_score": 79.6,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "77.215.24.102",
+    "geo_location": "Singapore,SG",
+    "resource_accessed": "/file/dept_share/13",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "56416fd9348f4f8088ca13214e516b35",
+    "entity_id": "user::alexanderrobert_b1dd",
+    "entity_type": "user",
+    "timestamp": "2026-06-02 19:02:03.516370",
+    "risk_score": 79.6,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "57.69.77.112",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/api/v1/endpoint_8",
+    "auth_method": "token",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "03907eb31337471d876f886c1f80f406",
+    "entity_id": "user::derrick99_060c",
+    "entity_type": "user",
+    "timestamp": "2026-06-27 00:47:57.052089",
+    "risk_score": 79.5,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "184.2.207.84",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/api/v1/endpoint_11",
+    "auth_method": "password",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "b5937f93968a4ffba8e39177668f4f1b",
+    "entity_id": "user::erikarush_ee4e",
+    "entity_type": "user",
+    "timestamp": "2026-06-08 18:25:51.910673",
+    "risk_score": 79.5,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "149.191.122.70",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/file/dept_share/32",
+    "auth_method": "sso",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "86b5122ebd0a486d9fc6594484754938",
+    "entity_id": "user::jimmy55_eabb",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 12:24:19.736400",
+    "risk_score": 79.5,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "150.118.164.82",
+    "geo_location": "Hyderabad,IN",
+    "resource_accessed": "/api/v1/endpoint_2",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": true
+  },
+  {
+    "event_id": "6e3041f33f274dfabac085098ac95ff5",
+    "entity_id": "user::jennifer64_b339",
+    "entity_type": "user",
+    "timestamp": "2026-06-08 03:22:08.255481",
+    "risk_score": 79.4,
+    "predicted_category": "low_and_slow_exfil",
+    "ground_truth_label": "low_and_slow_exfil",
+    "reasons": [
+      "session length deviation",
+      "first-time resource access",
+      "unusual command volume"
+    ],
+    "source_ip": "88.205.123.241",
+    "geo_location": "Chennai,IN",
+    "resource_accessed": "/file/dept_share/14",
+    "auth_method": "sso",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "3f24a4289bd54f9c8e7e032cd945c398",
+    "entity_id": "user::ujenkins_fe85",
+    "entity_type": "user",
+    "timestamp": "2026-06-06 13:58:14.647835",
+    "risk_score": 79.3,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "187.2.122.229",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/api/v1/endpoint_0",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "fc9ad59dd97d45d790872a42521602b5",
+    "entity_id": "user::lauren10_797d",
+    "entity_type": "user",
+    "timestamp": "2026-06-20 16:02:02.452007",
+    "risk_score": 79.3,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "151.52.217.131",
+    "geo_location": "Sao Paulo,BR",
+    "resource_accessed": "/api/v1/endpoint_25",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "539db696e54342069d06ae0030951fec",
+    "entity_id": "user::lauren10_797d",
+    "entity_type": "user",
+    "timestamp": "2026-06-03 18:07:28.537235",
+    "risk_score": 79.2,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "60.112.115.162",
+    "geo_location": "Sao Paulo,BR",
+    "resource_accessed": "/file/dept_share/24",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "a673bf720ac54726bbf6a202a2c7f0f4",
+    "entity_id": "user::katiegood_3247",
+    "entity_type": "user",
+    "timestamp": "2026-06-12 22:42:23.021540",
+    "risk_score": 79.2,
+    "predicted_category": "device_spoofing",
+    "ground_truth_label": "device_spoofing",
+    "reasons": [
+      "device fingerprint mismatch",
+      "session length deviation",
+      "unusual command volume"
+    ],
+    "source_ip": "116.80.165.190",
+    "geo_location": "Bengaluru,IN",
+    "resource_accessed": "/file/dept_share/5",
+    "auth_method": "sso",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "672c89c616ee4d82aef7f5f226288fde",
+    "entity_id": "dev::arm_dd33",
+    "entity_type": "edge_device",
+    "timestamp": "2026-06-18 16:52:07.097013",
+    "risk_score": 79.1,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "authentication outcome"
+    ],
+    "source_ip": "165.168.37.238",
+    "geo_location": "Lagos,NG",
+    "resource_accessed": "/file/dept_share/1",
+    "auth_method": "certificate",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "5cc21947d5f5496e8e58fc2b48f2d52d",
+    "entity_id": "user::charlesvaughn_d39b",
+    "entity_type": "user",
+    "timestamp": "2026-06-23 05:48:41.164264",
+    "risk_score": 79.1,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "206.255.114.132",
+    "geo_location": "Delhi,IN",
+    "resource_accessed": "/api/v1/endpoint_22",
+    "auth_method": "token",
+    "device_os": "Android 14",
+    "cold_start": false
+  },
+  {
+    "event_id": "e24ce289b6414e689776203ae8c0bf89",
+    "entity_id": "user::zlewis_289d",
+    "entity_type": "user",
+    "timestamp": "2026-06-01 14:15:21.650477",
+    "risk_score": 79.0,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "101.59.102.11",
+    "geo_location": "Dubai,AE",
+    "resource_accessed": "/api/v1/endpoint_18",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": true
+  },
+  {
+    "event_id": "4629d2d5539e4f81bb55b855c48d23f2",
+    "entity_id": "svc::explain_89d5",
+    "entity_type": "service_account",
+    "timestamp": "2026-06-23 11:08:29.655938",
+    "risk_score": 79.0,
+    "predicted_category": "credential_stuffing",
+    "ground_truth_label": "credential_stuffing",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "197.218.193.159",
+    "geo_location": "unknown_stuffing_origin",
+    "resource_accessed": "port:1883",
+    "auth_method": "token",
+    "device_os": "unknown",
+    "cold_start": false
+  },
+  {
+    "event_id": "1ecf9484dc29444389712528317d97b7",
+    "entity_id": "user::jonathanthompson_1068",
+    "entity_type": "user",
+    "timestamp": "2026-06-28 22:18:09.982520",
+    "risk_score": 79.0,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "77.215.24.102",
+    "geo_location": "Singapore,SG",
+    "resource_accessed": "/file/dept_share/13",
+    "auth_method": "token",
+    "device_os": "Windows 11",
+    "cold_start": false
+  },
+  {
+    "event_id": "a4db78e0e2824c4682b0ac94d19d2aa1",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-11 21:54:22.132594",
+    "risk_score": 79.0,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "49.247.155.16",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/file/dept_share/0",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "a9fe701693ca4d73ac363d0fa912c47e",
+    "entity_id": "user::rushmartin_0bbf",
+    "entity_type": "user",
+    "timestamp": "2026-06-26 22:36:02.735353",
+    "risk_score": 78.9,
+    "predicted_category": "lateral_movement",
+    "ground_truth_label": "lateral_movement",
+    "reasons": [
+      "unusual command volume",
+      "abnormal event timing/burst",
+      "first-time resource access"
+    ],
+    "source_ip": "204.232.103.248",
+    "geo_location": "Sao Paulo,BR",
+    "resource_accessed": "port:80",
+    "auth_method": "password",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  },
+  {
+    "event_id": "9cb334fc16a24303932e274d582f5a94",
+    "entity_id": "user::marie16_6ae1",
+    "entity_type": "user",
+    "timestamp": "2026-06-12 17:14:29.884503",
+    "risk_score": 78.9,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "abnormal event timing/burst",
+      "unusual command volume"
+    ],
+    "source_ip": "76.56.188.130",
+    "geo_location": "Delhi,IN",
+    "resource_accessed": "/api/v1/endpoint_23",
+    "auth_method": "biometric",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "6f16bb7587c246aa8f4ec8115865a4a8",
+    "entity_id": "user::ihorton_3dbf",
+    "entity_type": "user",
+    "timestamp": "2026-06-14 07:57:00.675180",
+    "risk_score": 78.9,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "device fingerprint mismatch",
+      "anomalous action sequence/order"
+    ],
+    "source_ip": "222.115.30.184",
+    "geo_location": "Berlin,DE",
+    "resource_accessed": "/api/v1/endpoint_21",
+    "auth_method": "password",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "8acf1466f8734ac28b0ca9aa796f3edc",
+    "entity_id": "user::yarnold_6caf",
+    "entity_type": "user",
+    "timestamp": "2026-06-11 21:53:56.132594",
+    "risk_score": 78.9,
+    "predicted_category": "brute_force",
+    "ground_truth_label": "brute_force",
+    "reasons": [
+      "unusual command volume",
+      "session length deviation",
+      "abnormal event timing/burst"
+    ],
+    "source_ip": "49.247.155.16",
+    "geo_location": "Tokyo,JP",
+    "resource_accessed": "/file/dept_share/0",
+    "auth_method": "sso",
+    "device_os": "iOS 17",
+    "cold_start": false
+  },
+  {
+    "event_id": "1e6b3b56ce4149e0b3e7dd4fcfc04403",
+    "entity_id": "user::smitchell_94c2",
+    "entity_type": "user",
+    "timestamp": "2026-06-09 07:50:54.549292",
+    "risk_score": 78.8,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "unusual time-of-day"
+    ],
+    "source_ip": "207.47.11.138",
+    "geo_location": "San Francisco,US",
+    "resource_accessed": "/hr/payroll",
+    "auth_method": "sso",
+    "device_os": "RTOS-fw2.3",
+    "cold_start": false
+  },
+  {
+    "event_id": "165d2c4535ff4dea9c8a588a3327bf18",
+    "entity_id": "dev::throw_0b7f",
+    "entity_type": "edge_device",
+    "timestamp": "2026-06-16 05:37:40.920256",
+    "risk_score": 78.8,
+    "predicted_category": "normal",
+    "ground_truth_label": "normal",
+    "reasons": [
+      "session length deviation",
+      "unusual command volume",
+      "device fingerprint mismatch"
+    ],
+    "source_ip": "128.50.148.148",
+    "geo_location": "New York,US",
+    "resource_accessed": "port:1883",
+    "auth_method": "certificate",
+    "device_os": "Linux 5.15",
+    "cold_start": false
+  }
+]
